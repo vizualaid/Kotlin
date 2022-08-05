@@ -1,0 +1,23 @@
+All programs essentially perform operations on strings, numbers and any other type of values.
+--> These values are called Literals
+Literals
+--Integer
+--character
+--Strings
+
+Interger numbers
+//If an integer value contains a lot of digits, 
+we can add underscores to divide the digits into blocks to make this number more readable:
+for example, 1_000_000 is much easier to read than 1000000 eg. 1__000_000, 1_2_3.
+**underscores can’t appear at the start or at the end of the number.
+**If you write _10 or 100_ , you get an error.
+Characters
+A single character can represent a digit, a letter, or another symbol 
+'$', 'z', '0'
+**incorrect: 'abc', '543'
+for this we have Strings
+
+Strings
+double quotes instead of single ones. 
+examples: "text", "I want to learn Kotlin", "123456", "e-mail@gmail.com"
+
