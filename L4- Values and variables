@@ -1,0 +1,14 @@
+A variable is a storage for a value, which can be a string, a number, or something else.
+Every variable has a name (or an identifier) to distinguish it from other variables.
+I can access a value by the name of the variable.
+Declaring
+val for value kinda immutable variable
+var for variable is mutable when we need for as many times
+Both val and var keywords provide me a variable!
+declaring and initializing at the same time
+val num = 123 //int
+val language = "Kotlin" //string
+val ch= 'y' //char
+var number = 10
+number = 11 // ok
+number = "twelve" // an error here! type conversion needed 
