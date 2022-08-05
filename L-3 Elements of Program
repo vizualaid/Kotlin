@@ -1,5 +1,8 @@
-Basic terminology
-After you have seen the result, let's learn the basic terminology and then try to understand our program.
+let's learn the basic terminology 
+keyword is a word that has a special meaning in the programming language
+name is a word written by a programmer that identifies an entity in a program
+statement is a single action
+comment is a special text ignored by Kotlin
 
 A program is a sequence of instructions (called statements), which are executed one after another in a predictable manner. Sequential flow is the most common and straightforward situation when statements are executed in the order they are written, i.e., from top to bottom, one after another;
 A statement (or a programming statement) is a single command to be executed (like printing a text).
@@ -12,6 +15,15 @@ I did this program before
 fun main() {
     println("Hello World!")
 }
+inshort
+fun -- keyword
+main -- name
+println("Hello, World!") -- statement
+"Hello, World!" -- literal
+
+
+
+
 Lets Disect this Hello World program.
 
 fun main() { 
