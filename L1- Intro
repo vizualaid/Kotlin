@@ -1,0 +1,53 @@
+What is Kotlin?
+Kotlin is a highly effective modern programming language developed by JetBrains.
+It has a very clear and concise syntax, which makes the code easy to read.
+USE-
+Knowledge of Kotlin allows developers to write mobile, server-side, and desktop applications, as well as useful frameworks and libraries. 
+As a general-purpose language, it can be used in many spheres, 
+such as financial services, telecommunications, embedded systems, medicine, development tools (like IntelliJ IDEA), and so on.
+A multiplatform language
+Kotlin is a multiplatform language
+--> JVM --  Kotlin is fully interoperable with Java, which means Kotlin works great with all existing Java code and libraries.
+--> Android -- using Kotlin, you can create mobile applications for the most used operating system in the world.
+--> JAVASCRIPT -- Kotlin is also compatible with JavaScript, which enables you to develop "client-side" web applications and run them in a browser.
+--> NATIVE -- Kotlin code can be converted into a file that can be run on any OS such as Windows, Linux, iOS, and macOS.
+
+Features
+Kotlin is designed as a pragmatic language, which means that its main purpose is 
+solving real-world problems rather than completing research purposes.
+It is also important that Kotlin supports multiple programming paradigms such as
+--> imperative programming
+--> object-oriented programming
+--> generic programming
+--> functional programming
+and more.
+Popular Software to use --> IntelliJ IDEA, Eclipse, and Android Studio, 
+
+No introduction to any language is complete without the inauguration with "Hello World!" Statement :)
+
+fun main() {
+    println("Hello World!")
+}
+
+Awwsome I learned the bacis of the kotlin 
+how it is developed, used, characteristic features and the first few lines of kotlin code.  
+
+--end--
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Class notes
+kotlin
+statically typed- checked at compile time 
+jetbrains-2016 under apache 2.0 license
+in 2018 started distribution with javascript and jvm
+dont require semicolen
+allows exchange and use of info. from java to co exist in same project
+eliminate the null pointer exception from code
+less time to write the code and easy to deploy the code
+
+//kotlinc hello.kt -include-runtime -d hello.jar
+kotlin hello.kt
+//java -jar hello.jar
+//server side used scripting lang. and as kotline 
+//
