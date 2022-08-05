@@ -38,6 +38,7 @@ how it is developed, used, characteristic features and the first few lines of ko
 
 Class notes
 kotlin
+named after the Kotlin Island near St. Petersburg, Russia
 statically typed- checked at compile time 
 jetbrains-2016 under apache 2.0 license
 in 2018 started distribution with javascript and jvm
