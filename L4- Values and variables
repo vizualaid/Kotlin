@@ -5,6 +5,15 @@ Declaring
 val for value kinda immutable variable
 var for variable is mutable when we need for as many times
 Both val and var keywords provide me a variable!
+
+declaring
+val boolFalse: Boolean
+val num : Int 
+
+initializing 
+boolFalse = false 
+num = 6
+
 declaring and initializing at the same time
 val num = 123 //int
 val language = "Kotlin" //string
@@ -12,3 +21,90 @@ val ch= 'y' //char
 var number = 10
 number = 11 // ok
 number = "twelve" // an error here! type conversion needed 
+
+constants, or val variables in Kotlin
+val pi = 3.1415
+val helloMsg = "Hello"
+
+println(pi)       // 3.1415
+println(helloMsg) // Hello
+Both variables cannot be modified, but they can be accessed as many times as we need.
+
+val pi = 3.1415
+pi = 3.1416 // error line --> Val cannot be reassigned
+
+Notice that the value of a val variable can be reassigned to a var variable 
+without any restrictions and the value of a regular variable can be changed 
+as many times as needed:
+
+val count = 10
+var cnt = count
+cnt = 20 // no errors here, cnt is not a constant
+
+
+Val variables and mutability
+It is important to note that val is not a synonym of immutable.
+In the following example, we will use a MutableList, 
+which is an ordered set of elements of the same type.
+
+// list creation
+val myMutableList = mutableListOf(1, 2, 3, 4, 5)
+// trying to update the list
+myMutableList = mutableListOf(1, 2, 3, 4, 5, 6) // error line
+here error but 
+NOTE -->It is always possible to change the 
+internal state of a val variable: while it is prohibited to reassign the variable,
+its content can be modified in some other ways.
+So, the following code is correct:
+
+// list creation
+val myMutableList = mutableListOf(1, 2, 3, 4, 5)
+// adding a new element
+myMutableList.add(6)   // it works
+// printing the list
+println(myMutableList) // [1, 2, 3, 4, 5, 6]
+
+As you can see, this code changed the internal state of the list by 
+adding another integer number. When we invoked the add() function, 
+we changed not the variable itself but the list it represents.
+//It may is easier to think about Kotlin val variables as Java final variables. 
+They are quite similar: 
+both prohibit reassigning a value to the variable 
+but allow changing the internal state of the object.
+
+Const variables
+const val MY_STRING = "This is a constant string"
+
+const val MY_STRING = readln() // not a constant String!!! 
+
+There are some restrictions on when the const modifier can be applied. 
+const val CONST_INT = 127
+const val CONST_DOUBLE = 3.14
+const val CONST_CHAR = 'c'
+const val CONST_STRING = "I am constant"
+const val CONST_ARRAY = arrayOf(1, 2, 3) // error: only primitives and strings are allowed
+
+Besides, const variables need to be declared on top level, outside of any functions:
+
+const val MY_INT_1 = 1024 // correct line
+
+fun main() {
+    const val MY_INT_2 = 2048 // error: Modifier 'const' is not applicable to 'local variable'
+}
+
+
+
+When to use val variables
+A good practice is to use val variables by default. 
+Then, when it appears to be necessary for the code, change them to var variables:
+eg.
+var a = 1024 //as in the end Operations a needs to update its value we need the mutable variable here
+val b = 256
+val c = 128
+a += b * c
+
+why what is the need 
+This approach allows you to write programs with the minimum number of mutable variables,
+which leads to fewer errors.
+
+--end--
