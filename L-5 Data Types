@@ -1,0 +1,76 @@
+  /* Data types
+  Every variable has a type that determines what possible operations we can perform on this variable and which values we can store in it.
+  * one way-- is declare and initialize together 
+              Kotlin can figure out the type of a variable automatically based on the assigning value.
+     (declare a variable with type inference)
+     val/var identifier = initializatin
+     val text = "Hello, I am studying Kotlin now." 
+  val n = 1
+  * other way-- we can specify the type of a variable when declaring it:
+
+    val/var identifier: Type = initialization 
+    val id: Int = 23
+ 
+  Type Mismatch error
+    var age = 30 // the type is inferred as Int
+    age = "31 years old" // Type mismatch
+  { error
+  val language
+  language = "Kotlin" }
+    */
+  
+  fun main(){
+    var a: Int= 10
+    var d: Double= 100.00
+    var f: Float= 100.4f
+    var l: Long= 1000000000
+    var s: Short= 9
+    var b: Byte= 1
+    var c: Char= 'A'
+    var st: String= """This is a String"
+        this is nextline
+        this is 3rd line"""
+    var boolT: Boolean=true
+    var boolF: Boolean=false
+    var boolO: Boolean?= null
+    println("Int = "+a)
+    println("Double = "+d)
+    println("Float = "+f)
+    println("Long =" +l)
+    println("Short = "+s)
+    println("Byte = "+b)
+    /*println("Char = "+c)
+    println("String = "+st)
+    println("Boolean = "+boolT)
+    println("Boolean = "+boolF)
+    println("Boolean = "+boolO)
+
+    //Type conversion
+    var i: Int= 1
+    println(i)
+    i =205//error i=1.3
+    println(i)
+  
+
+    toByte()
+    toShort()
+    toInt()
+    toLong()
+    toFloat()
+    toDouble()
+    toChar()
+     */
+
+    var I: Int= 3
+    var L: Long= I.toLong()
+    var D: Double= I.toDouble()
+    var F: Float= I.toFloat()
+    var S: Short= I.toShort()
+    var B: Byte= I.toByte()
+    var C: Char= I.toChar()
+
+
+
+
+
+}
