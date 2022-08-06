@@ -43,8 +43,10 @@ Large units of information
   to use new prefixes kibi, mebi, and gibi for the binary-based system.
   Here bi means binary: kibibyte is kilo binary byte.
     
-    
-    
-    
+    Measurement units conversion
+    1 GiB = 1KiB * 1024 * 1024 = 1048576 KiB
+    x bits to KiB==  (x/8) / 1024
+     1 GB to kB
+     1 GB = 1kB * 1000 * 1000 = 1000000 kB
     
     
