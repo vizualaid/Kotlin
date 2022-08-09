@@ -40,6 +40,8 @@ val fraction: Float = 1.51f  // Float because the type is specified
   println(Int.MIN_VALUE) 
   println(Int.MAX_VALUE)
  similarly String, Boolean, Char
+ 
+ calculating the upper (maximum) possible value of an Int variable --> (2n−1) − 1, where n is the number of bits
   
     */
   
