@@ -17,6 +17,30 @@
   { error
   val language
   language = "Kotlin" }
+  1) Number types: Long, Int, Short, Byte 
+val zero = 0 // Int
+val one = 1  // Int
+val oneMillion = 1_000_000  // Int
+
+val twoMillion = 2_000_000L           // Long because it is tagged with L
+val bigNumber = 1_000_000_000_000_000 // Long, Kotlin automatically chooses it (Int is too small)
+val ten: Long = 10                    // Long because the type is specified
+
+val shortNumber: Short = 15 // Short because the type is specified
+val byteNumber: Byte = 15   // Byte because the type is specified
+  
+  
+  Floating-point types: 
+  Kotlin has two such types: Double (64 bits) and Float (32 bits)
+  These types can store only a limited number of decimal digits (~6-7 for Float and ~14-16 for Double).
+val pi = 3.1415              // Double
+val e = 2.71828f             // Float because it is tagged with f
+val fraction: Float = 1.51f  // Float because the type is specified
+  
+  println(Int.MIN_VALUE) 
+  println(Int.MAX_VALUE)
+ similarly String, Boolean, Char
+  
     */
   
   fun main(){
