@@ -1,0 +1,36 @@
+//Using readline() 
+//To read a line of string in Kotlin, you can use readline() function.
+
+fun main(arg: Array<String>){
+    print("Enter the Number : ")
+    var a=  readLine()!!.toInt()
+
+    /*
+    It's possible to take input as a string using readLine() 
+    function, and convert it to values of other data type (like Int) explicitly. by .toInt ,.toLong ect.
+     */
+        println("The Number intered by user is $a ")
+}
+
+//Using Scanner Class
+import java.util.Scanner
+
+fun main(args: Array<String>) {
+
+    // Creates an instance which takes input from standard input (keyboard)
+    val reader = Scanner(System.`in`)
+    print("Enter a number: ")
+
+    // nextInt() reads the next integer from the keyboard
+    var i:Int = reader.nextInt()
+
+    println("You entered: $i")
+/*
+    Here, reader object of Scanner class is created.
+    Then, the nextInt() method is called which takes integer input from the user which is stored in variable integer.
+    To get Long, Float, double and Boolean input from the user,
+    you can use nextLong(), nextFloat(), nextDouble() and nextBoolean() methods respectively.
+ */
+ 
+}
+ 
