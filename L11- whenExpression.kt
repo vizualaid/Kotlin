@@ -1,8 +1,7 @@
 // Kotlin When Expression is similar to c,c++,and Java
 
-
 fun main(args:Array<String>){
-    val day=2
+    var day=  readLine()!!.toInt()
     val res=when(day){
         1->"Monday"
         2->"Tuesday"
@@ -14,4 +13,5 @@ fun main(args:Array<String>){
         else->"Invalid Input"
 
     }
+    println(res)
 }
