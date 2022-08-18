@@ -1,0 +1,35 @@
+In computer science, a programming language is said to have first-class functions 
+if it treats functions as first-class citizens. This means the language supports passing functions as arguments to other functions, 
+returning them as the values from other functions, and assigning them to variables or storing them in data structures.
+So Kotlin functions are first-class,
+which means they can be stored in variables and data structures, and can be passed as arguments to and returned from other higher-order functions.
+You can perform any operations on functions that are possible for other non-function values.
+to facilitate this kotlin as statically typed lang. 
+it uses a family of function type to represent functions 
+and provides a set of specialized language constructs, such as lambda expressions.
+
+Higher-order functions﻿
+A higher-order function is a function that takes functions as parameters, 
+or returns a function.
+eg. of  a higher-order function is a func. which takes an initial accumulator value 
+and a combining function and builds its return value by consecutively combining the
+current accumulator value with each collection element, replacing the accumulator value each time:
+
+
+
+
+
+
+kotlin Lamda Function
+function which has no name and with 
+fun main(arg: Array<String>){
+    val upperCase={str:String->str.toUpperCase()}
+    println(upperCase("hello, world!"))
+}
+
+kotlin inline function
+fun. decleared with inline keyword
+the use of inline fun. enhances the performance of HOD function. 
+The inline fun. tells the compiler to copy parameters and function to call site.
+
+
