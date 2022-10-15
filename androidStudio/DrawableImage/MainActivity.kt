@@ -1,4 +1,5 @@
 package com.example.drawableimage
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils.loadAnimation
@@ -26,12 +27,13 @@ class MainActivity : AppCompatActivity() {
 
     private var index=0
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val isw= findViewById<ImageSwitcher>(R.id.imageSwitcher)
         val btn = findViewById<Button>(R.id.btn1)
-
+        val btn2 = findViewById<Button>(R.id.btn2)
         isw.setFactory {
             val imgView= ImageView(applicationContext)
             imgView.scaleType=ImageView.ScaleType.FIT_CENTER
@@ -48,6 +50,11 @@ class MainActivity : AppCompatActivity() {
 
         btn.setOnClickListener{
             index=if(index+1< nameList.size)index+1 else 0
+            isw.setImageResource(nameList[index])
+        }
+
+        btn2.setOnClickListener{
+            index= if(index>0) index-1 else nameList.size-1
             isw.setImageResource(nameList[index])
         }
     }
